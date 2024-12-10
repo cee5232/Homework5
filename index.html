@@ -14,10 +14,21 @@
       margin: 0;
       padding: 0;
       font-family: sans-serif;
-      background-color: #ededed;
+      background-color: #ffffff;
     }
     polaris-chip {
       margin: 16px;
+    }
+    my-card{
+      height: 40vh;
+      width: 200px;
+      
+      color: rgb(0, 0, 0);
+      text-align:center;
+      overflow:auto;
+      background-color: rgb(218, 109, 79);
+      margin:16px;
+      text-align:center;
     }
   </style>
   <title>polaris-chip / my-card</title>
@@ -26,14 +37,53 @@
 <body>
   <h1>polaris-chip</h1>
   <!-- this is going to do whatever the tag's defaults are -->
-  <polaris-chip title="News of Record" link="https://psu.edu/"></polaris-chip>
-  <polaris-chip title="Faculty and Staff"></polaris-chip>
-  <polaris-chip title="Sports are the only thing that matter"></polaris-chip>
-  <polaris-chip title="Grants and donations"></polaris-chip>
+  <polaris-chip title="We Are Updates" link="https://psu.edu/" shiny></polaris-chip>
+  <polaris-chip title="We Are Hax the Web" link="https://hax.psu.edu"></polaris-chip>
+  <polaris-chip title="We Are Athletes" link="https://gopsusports.com/"></polaris-chip>
+  <polaris-chip title="We Are Growing" link="https://www.psu.edu/admission/undergraduate/how-to-apply"></polaris-chip>
 
   <h1>my-card</h1>
-  <my-card></my-card>
+  
+  <my-card 
+    fancy
+    title= "Cakes" 
+    image="https://2.bp.blogspot.com/-7gdouA4Yzd0/WBeq9k9j88I/AAAAAAAAQEM/x5ZowOYuTZ0hf73iwD5_rz1Cs-LB1qFfQCLcB/s1600/victoria1.jpg" 
+    link="https://hax.psu.edu/" 
+    buttonTitle="hax-psu" 
+    text="This is a picture of a Cakes, of the biggest weeks on the Great British Baking show, one of my favoirte shows on Netflix" >
+  </my-card>
 
+  <my-card 
+    title= "Pastries" 
+    image="https://1.bp.blogspot.com/-3pcpOugupek/V-rT3NSYoJI/AAAAAAAAPuY/GLGHsirMGOkOvDOdT6hfQFspMwIgS1nOwCLcB/s1600/IMG_6293.JPG" 
+    link="https://hax.psu.edu/" 
+    buttonTitle="hax-psu"  
+    text="This is a picture of a Bakewell Tart, a pastry made on the Great British Baking Show" >
+  </my-card>
+  <my-card 
+    title= "Bread" 
+    image="https://images.huffingtonpost.com/2016-09-07-1473287316-2423687-Katesbake.jpg" 
+    link="https://hax.psu.edu/" 
+    buttonTitle="hax-psu"  
+    text="This is a picture of Bread on the Great British Bakeing Show, one of the most stressful weeks on the show">
+  </my-card>
+  <my-card 
+    title= "Jello" 
+    image="https://cdn.quizly.co/wp-content/uploads/2022/03/09150159/Jello-Cake.jpeg" 
+    link="https://hax.psu.edu/" 
+    buttonTitle="hax-psu" 
+    text="This is a picture of Jello, they sometimes do more 70s cooking on the show, jello included">
+  </my-card>
+  <my-card 
+    title= "Biscuts" 
+    image="https://th.bing.com/th/id/OIP.0vNeqy84NJp2BAbBSKcV-QHaFj?rs=1&pid=ImgDetMain" 
+    link="https://hax.psu.edu/" 
+    buttonTitle="hax-psu" 
+    text="Biscuts and a classic British Tea treat so a frequent bake on the show">
+  </my-card>
+
+ 
+  
   <!-- this is what is bringing in the definition for this tag -->
   <script type="module" src="./src/polaris-chip.js"></script>
   <script type="module" src="./src/my-card.js"></script>
